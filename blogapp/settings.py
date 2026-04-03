@@ -30,7 +30,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = os.environ.get('DEBUG','False') == 'True'
-ALLOWED_HOSTS = enviro.get("ALLOWED_HOSTS").split("")
+ALLOWED_HOSTS = environ.get("ALLOWED_HOSTS").split(" ")
 
 
 # Application definition
